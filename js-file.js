@@ -1,3 +1,7 @@
+// Helper functions
+
+const Clamp = (val, min, max) => Math.min(Math.max(val, min), max)
+
 
 function onHover(e) {
     e.target.style.background = "blue";
@@ -36,8 +40,9 @@ function createGrid(gridWidth) {
 
 function onGenerateGridButtonClicked() {
     const gridSizeInput = document.querySelector("#grid-size-input");
-    console.log(gridSizeInput.value);
-    createGrid(parseInt(gridSizeInput.value));
+    let gridSize = parseInt(gridSizeInput.value);
+    gridSize = Clamp(gridSize, 1,100);
+    createGrid(gridSize);
 }
 
 const generateGridButton = document.querySelector("#generate-grid-button");

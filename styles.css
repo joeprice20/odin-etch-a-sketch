@@ -1,9 +1,6 @@
 .grid-cells {
     background: blueviolet;
-    height: 64px;
-    width: 64px;
-    margin: 2px;
-    
+    flex: 1;
     
     
 
@@ -11,11 +8,17 @@
 
 #grid-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 960px;
+    height: 960px;
+    flex: 1;
+    gap:2px;
+    padding: 20px;
 
 }
 
-/* .grid-column {
-    
-} */
+.grid-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+     gap:2px;
+}
