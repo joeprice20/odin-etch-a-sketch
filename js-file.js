@@ -1,4 +1,9 @@
 
+function onHover(e){
+    e.target.style.background = "blue"
+}
+
+
 function createGrid(gridWidth) {
     const gridContainer = document.querySelector("#grid-container");
 
@@ -10,10 +15,11 @@ function createGrid(gridWidth) {
         for (let y = 0; y < gridWidth; y++) {
             let gridCell = document.createElement("div");
             gridCell.classList.add("grid-cells");
+            gridCell.addEventListener("mouseover", onHover)
             gridColumn.appendChild(gridCell);
         }
 
     }
 }
 
-createGrid(4);
+createGrid(16);
