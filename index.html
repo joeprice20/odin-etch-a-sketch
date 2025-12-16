@@ -10,13 +10,16 @@
 </head>
 
 <body>
-    <label for="palettes">Choose a color palette:</label>
-    <select name="palettes" id="palettes-select">
-        <!-- Color palette dropdowns are generated in javascript  -->
-    </select>
-    <h3>Enter grid size</h3>
-    <input id="grid-size-input" type="number" min="2" max="100" value=16>
-    <button id="generate-grid-button">Generate Grid</button>
+    <div class="horizontal-box">
+        <label for="palettes"><b>Choose a color palette:</b></label>
+        <select name="palettes" id="palettes-select">
+            <!-- Color palette dropdowns are generated in javascript  -->
+        </select>
+        <p><b>Choose a grid size:</b></p>
+        <input id="grid-size-input" type="number" min="2" max="100" value=16>
+        <button id="generate-grid-button">Generate Grid</button>
+    </div>
+
     <div id="grid-container"></div>
 </body>
 

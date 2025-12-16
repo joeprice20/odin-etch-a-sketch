@@ -4,13 +4,19 @@
 
 }
 
+.horizontal-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #grid-container {
     display: flex;
-    width: 960px;
-    height: 960px;
+    width: 800px;
+    height: 800px;
     flex: 1;
     gap: 1px;
-    padding: 20px;
+    padding: 10px;
 
 }
 
